@@ -35,10 +35,8 @@ void loop() {
   JSONVar trashObject;
   trashObject["ID"] = TRASHBIN;
   trashObject["level"] = hcsr04.distanceInMillimeters();
-//  trashObject["humidity"] = dht.readHumidity();
-//  trashObject["temperature"] = dht.readTemperature();
-trashObject["humidity"] = 60;
-trashObject["temperature"] = 27.6;
+  trashObject["humidity"] = dht.readHumidity();
+  trashObject["temperature"] = dht.readTemperature();
   trashObject["flame"] = analogRead(0);
   
   String trashmsg = JSON.stringify(trashObject);

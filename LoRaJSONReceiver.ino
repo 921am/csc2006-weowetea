@@ -24,20 +24,6 @@ void loop() {
     while (LoRa.available()) {
       String trashmsg = LoRa.readString();
       Serial.println(trashmsg);
-//      JSONVar trashObject = JSON.parse(trashmsg);
-//      Serial.print("ID: ");
-//      Serial.println(trashObject["ID"]);
-//      Serial.print("LEVEL: ");
-//      Serial.println(trashObject["level"]);
-//      Serial.print("HUMIDITY: ");
-//      Serial.println(trashObject["humidity"]);
-//      Serial.print("TEMPERATURE: ");
-//      Serial.println(trashObject["temperature"]);
-//      Serial.print("FLAME: ");
-//      Serial.println(trashObject["flame"]);
-//      
-//      Serial.print(" with RSSI:");
-//      Serial.println(LoRa.packetRssi());
     }
     
     // print RSSI of packet
